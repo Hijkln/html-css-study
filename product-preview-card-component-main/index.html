@@ -1,36 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <title>Frontend Mentor | Product preview card component</title>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Product preview card component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Nanum+Gothic&family=Outfit:wght@300;700&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Nanum+Gothic&family=Outfit:wght@300;700&display=swap');
+      body {
+        background-color: hsl(30, 38%, 92%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+      }
+      .section1 {
+        width: 600px;
+        display: flex;
+        vertical-align: top;
+        justify-content: center;
+        align-items: top;
+        border-radius: 16px;
+        background-color: white;
+      }
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Perfume
-
-  Gabrielle Essence Eau De Parfum
-
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
-
-  $149.99
-  $169.99
-
-  Add to Cart
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+      .section1 img {
+        width: 50%;
+        height: auto;
+        border-top-left-radius: 16px;
+        border-bottom-left-radius: 16px;
+      }
+      .section1 .text1 {
+        margin-top: 30px;
+        margin-left: 25px;
+        font-size: 14px;
+        font-weight: 500;
+        color: hsl(228, 12%, 48%);
+        font-family: 'Montserrat', sans-serif;
+      }
+      .section1 .text2 {
+        margin-top: 30px;
+        margin-left: 25px;
+        font-size: 35px;
+        font-weight: 700;
+        color: hsl(212, 21%, 14%);
+        font-family: 'Fraunces', serif;
+      }
+      .section1 .text3 {
+        margin-top: 30px;
+        margin-left: 25px;
+        font-size: 14px;
+        font-weight: 500;
+        color: hsl(228, 12%, 48%);
+        font-family: 'Montserrat', sans-serif;
+      }
+      .section1 .text4 {
+        margin-top: 30px;
+        margin-left: 25px;
+        font-size: 14px;
+        font-weight: 500;
+        color: hsl(158, 36%, 37%);
+      }
+      .section1 .text5 {
+        margin-top: 30px;
+        margin-left: 25px;
+        font-size: 14px;
+        font-weight: 500;
+        color: hsl(228, 12%, 48%);
+      }
+      .section2 {
+        width: 220px;
+        height: auto;
+        border-radius: 16px;
+        background-color: hsl(158, 36%, 37%);
+      }
+      .section2 {
+        margin-top: 30px;
+        margin-left: 25px;
+        font-size: 14px;
+        font-weight: 500;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="section1">
+      <img src="images/image-product-desktop.jpg" alt="" />
+      <p class="text1">P E R F U M E</p>
+      <p class="text2">Gabrielle Essence Eau De Parfum</p>
+      <p class="text3">
+        A floral, solar and voluptuous interpretation composed by Olivier Polge,
+        Perfumer-Creator for the House of CHANEL.
+      </p>
+      <p class="text4">$149.99</p>
+      <p class="text5"><del>$169.99</del></p>
+      <div class="section2">
+        <p class="text6">Add to Cart</p>
+        <!--submit 버튼으로 만들면 클릭하는 박스가 초록 박스가 아니고 다른 박스가 생겨버림, 글씨도 폰트 적용 안됨-->
+      </div>
+    </div>
+  </body>
+  <!--사진옆 글씨들 정렬을 원본처럼 정렬하는 방법을 모르겠음-->
 </html>
